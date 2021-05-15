@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b3841"
+    tools:context=".MainActivity">
+
+    <com.steelkiwi.library.IncrementProductView
+        android:id="@+id/productView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent"
+        app:ipv_middle_icon="@drawable/box"
+        app:ipv_highlight_background_color="@color/highlight_background_color"
+        app:ipv_default_background_color="@color/default_background_color"
+        app:ipv_text_color="@color/white"
+        app:ipv_text_size="@dimen/text_size"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productView"
+        android:layout_centerInParent="true"
+        android:id="@+id/productName"
+        android:layout_marginTop="15dp"
+        android:text="Products"
+        android:textColor="@color/white"
+        android:textSize="24sp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productName"
+        android:layout_centerInParent="true"
+        android:id="@+id/amount"
+        android:layout_marginTop="15dp"
+        android:text="$"
+        android:textColor="@color/white"
+        android:textSize="24sp"></TextView>
+
+</RelativeLayout>
